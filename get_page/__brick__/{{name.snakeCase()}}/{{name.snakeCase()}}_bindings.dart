@@ -1,0 +1,8 @@
+part of '{{name.snakeCase()}}.dart';
+
+class {{name.pascalCase()}}Binding extends Bindings {
+  @override
+  void dependencies() {
+    Get.lazyPut(() => {{name.pascalCase()}}Controller());
+  }
+}
